@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
 
-	public Vector2 speed = new Vector2(50,50);
+	public Vector2 speed = new Vector2(10,10);
 	private Vector2 movement;
 	// Use this for initialization
 	void Start () 
