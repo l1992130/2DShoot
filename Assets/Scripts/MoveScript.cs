@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MoveScript : MonoBehaviour {
 
-	public Vector2 speed = new Vector2(4,4);
+	public Vector2 speed = new Vector2(8,8);
 	public Vector2 direction = new Vector2(-1,0);
 	private Vector2 movement;
 
