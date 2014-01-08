@@ -26,7 +26,10 @@ public class PlayerScript : MonoBehaviour {
 		{
 			WeaponScript weapon = GetComponent<WeaponScript>();
 			if(weapon != null)
+			{
 				weapon.Attack(false);
+				SoundEffectsHelper.Instance.MakePlayerShotSound();
+			}
 		}
 
 		var dist = (transform.position - Camera.main.transform.position).z;

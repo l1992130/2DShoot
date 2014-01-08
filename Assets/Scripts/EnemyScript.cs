@@ -37,8 +37,13 @@ public class EnemyScript : MonoBehaviour {
 		else
 		{
 			foreach(WeaponScript weapon in weapons)
+			{
 				if(weapon != null && weapon.CanAttack)
+				{
 					weapon.Attack(true);
+					SoundEffectsHelper.Instance.MakeEnemyShotSound();
+				}
+			}
 			if(renderer.IsVisibleFrom(Camera.main) == false)
 				Destroy(gameObject);
 		}
